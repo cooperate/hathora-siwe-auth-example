@@ -11,6 +11,7 @@ app.use(express.json());
 app.use(cors());
 
 app.get('/', function (_, res) {
+    console.log('hello hathora');
     res.setHeader('Content-Type', 'text/plain');
     res.send('Hello Hathora');
 });
