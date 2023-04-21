@@ -10,6 +10,11 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
+app.get('/', function (_, res) {
+    res.setHeader('Content-Type', 'text/plain');
+    res.send('Hello Hathora');
+});
+
 app.get('/nonce', function (_, res) {
     res.setHeader('Content-Type', 'text/plain');
     const nonce = generateNonce();
