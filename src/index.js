@@ -39,4 +39,4 @@ app.post('/verify', async function (req, res) {
     }
 });
 
-app.listen(3001, () => console.log(`hathora siwe auth server listening on port: 3001`));
+app.listen(3001, '0.0.0.0', () => console.log(`hathora siwe auth server listening on port: 3001`));
